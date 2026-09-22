@@ -79,3 +79,70 @@ async function getUrls(){
 
 getUrls();
 ```
+
+### PHP
+```php
+<?php
+    $ch = curl_init();
+	curl_setopt_array($ch, [
+        CURLOPT_URL => 'https://seo-spider.codedev-tech.com.br/link-checker/',
+        CURLOPT_POST => true,
+        CURLOPT_HTTPHEADER => [
+            'Accept: application/json',
+            'Content-Type: application/json'
+        ],
+        CURLOPT_POSTFIELDS => json_encode([
+            'site' => 'https://www.utorrent.com/'
+        ]),
+        CURLOPT_RETURNTRANSFER => true
+    ]);
+	$response = curl_exec($ch);
+	curl_close($ch);
+	
+    // Respostas (Link, Código HTTP retornado e Status da resposta)
+    $results = json_decode($response, true);
+    foreach ($results as $result) {
+        echo 'URL: ' . $item['URL'] . '<br>';
+        echo 'Código HTTP: ' . $item['Code'] . '<br>';
+        echo 'Status: ' . $item['Status'] . '<br>';
+        echo '<hr>';
+    }
+?>
+```
+
+### Java
+```java
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class Api{
+    public static void main(String[] args){
+        try{
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(
+                            "https://seo-spider.codedev-tech.com.br/link-checker/"
+                    ))
+                    .header("Accept", "application/json")
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString("{\"site\": \"https://www.utorrent.com/\"}"))
+                    .build();
+
+            HttpResponse<String> response = client.send(
+                    request,
+                    HttpResponse.BodyHandlers.ofString()
+            );
+
+            // Respostas (Link, Código HTTP retornado e Status da resposta)
+            String[] results = (response.body().replace("[", "").replace("]", "").replace("{", "")).split("},");
+            for(String result: results){
+                System.out.println(result);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
