@@ -6,5 +6,12 @@
 <h2>O que são links quebrados?</h2>
 <p>Links quebrados são links disponibilizados ao usuário em um site que não funcionam de verdade, retornando erros como o 404 (página não encontrada) e o 403 (acesso proibido). Estes links, além de causarem frustação nos usuários, diminuem o SEO Score da página, fazendo com que esta não apareça nos primeiros resultados de busca dos buscadores.</p>
 
+<h2>Exemplos de erros retornados por links quebrados</h2>
+<ul>
+  <li><b>404 (página não encontrada)</b> - Indica que uma página/arquivo não existe no site.</li>
+  <li><b>403 (acesso proibido)</b> - Indica que o acesso a uma determinada página não é permitida pelo servidor</li>
+  <li><b>500 (erro interno no servidor)</b> - Indica que a página não está disponível devido a um erro interno no servidor. Muitas vezes é causado por erros no código do back-end do site/app web (erros no código PHP, por exemplo).</li>
+</ul>
+
 <h2>O que é o SEO Score?</h2>
 <p>O SEO Score é uma pontuação de 0 a 100 que mede o nível de optimização de uma página para os motores de busca, como o Google e o Bing. Quanto mais optimizada for uma página maiores são as chances dela aparecer nos primeiros resultados de busca, fazendo com que ela atraia mais visitantes e saia na frente de páginas concorrentes.</p>
