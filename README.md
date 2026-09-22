@@ -21,11 +21,9 @@
 
 <h2>Como usar - exemplos com código</h2>
 <h3>Python</h3>
+````markdown
 ```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Olá, mundo!");
-    }
-}
+System.out.println("Olá");
 ```
+````
 
