@@ -15,3 +15,6 @@
 
 <h2>O que é o SEO Score?</h2>
 <p>O SEO Score é uma pontuação de 0 a 100 que mede o nível de optimização de uma página para os motores de busca, como o Google e o Bing. Quanto mais optimizada for uma página maiores são as chances dela aparecer nos primeiros resultados de busca, fazendo com que ela atraia mais visitantes e saia na frente de páginas concorrentes.</p>
+
+<h2>O link é como um cartaz de produto</h2>
+<p>Se você é dono de um site, deve pensar nos links que você disponibiliza aos usuários como se fossem cartazes para um produto - se o link está disponível para clique, o conteúdo que ele aponta também deve estar disponível para acesso. Um link quebrado é como se fosse um cartaz apontando a existência de um produto que não existe em estoque (propaganda enganosa).</p>
