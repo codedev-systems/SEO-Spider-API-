@@ -30,7 +30,7 @@ Se o link está disponível para clique, o conteúdo para o qual ele aponta tamb
 
 Um link quebrado é como se fosse um cartaz apontando para um produto que não está disponível na loja — algo frustrante para os visitantes da sua página, que são equivalentes aos clientes da loja.
 
-## Como usar — exemplos com código
+## Como usar? — exemplos com código
 
 ### Python
 
