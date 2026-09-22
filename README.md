@@ -30,6 +30,14 @@ Se o link está disponível para clique, o conteúdo para o qual ele aponta tamb
 
 Um link quebrado é como se fosse um cartaz apontando para um produto que não está disponível na loja — algo frustrante para os visitantes da sua página, que são equivalentes aos clientes da loja.
 
+## Como o SEO Spider age?
+O SEO Spider navega por todas as páginas do site, capturando os links achados no caminho e testando a disponibilidade de seus respectivos conteúdos. 
+
+Cada link quebrado (ou seja, com conteúdo indisponível) é adicionado a um JSON, contendo as seguintes informações:
+* **URL do link quebrado:** www.example.com/broken-link
+* **Código HTTP retornado:** 404, 403, 500, ...
+* **Status:** Not Found, Forbidden, ...
+
 ## Como usar? — exemplos com código
 
 ### Python
