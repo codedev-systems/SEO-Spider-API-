@@ -9,7 +9,7 @@
 <h2>Exemplos de erros retornados por links quebrados</h2>
 <ul>
   <li><b>404 (página não encontrada)</b> - Indica que uma página/arquivo não existe no site.</li>
-  <li><b>403 (acesso proibido)</b> - Indica que o acesso a uma determinada página não é permitida pelo servidor</li>
+  <li><b>403 (acesso proibido)</b> - Indica que o acesso a uma determinada página não é permitida pelo servidor.</li>
   <li><b>500 (erro interno no servidor)</b> - Indica que a página não está disponível devido a um erro interno no servidor. Muitas vezes é causado por erros no código do back-end do site/app web (erros no código PHP, por exemplo).</li>
 </ul>
 
