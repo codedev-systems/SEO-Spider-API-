@@ -38,6 +38,8 @@ Cada link quebrado (ou seja, com conteúdo indisponível) é adicionado a um JSO
 * **Código HTTP retornado:** 404, 403, 500, ...
 * **Status:** Not Found, Forbidden, ...
 
+Ao final do rastreio, este JSON é retornado à aplicação que solicitou o rastreio por meio da API.
+
 ## Como usar? — exemplos com código
 
 ### Python
