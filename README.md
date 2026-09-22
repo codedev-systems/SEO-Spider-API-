@@ -25,16 +25,16 @@
   <code>
     import requests
 
-response = requests.post(
-    'https://seo-spider.codedev-tech.com.br/link-checker/', # URL da API
-    headers={'Accept': 'application/json'}, # Cabeçalho
-    json={
-        'site': 'https://www.utorrent.com/' # site alvo
-    }
-)
+    response = requests.post(
+      'https://seo-spider.codedev-tech.com.br/link-checker/', # URL da API
+      headers={'Accept': 'application/json'}, # Cabeçalho
+      json={
+          'site': 'https://www.utorrent.com/' # site alvo
+      }
+    )
 
-# Respostas (Link, Código HTTP retornado e Status da resposta)
-for item in response.json():
-    print(item)
+    ''' Respostas (Link, Código HTTP retornado e Status da resposta) '''
+    for item in response.json():
+      print(item)
   </code>
 </pre>
