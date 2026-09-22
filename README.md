@@ -18,3 +18,23 @@
 
 <h2>O link é como um cartaz de produto</h2>
 <p>Se você é dono de um site, deve pensar nos links que você disponibiliza aos usuários como se fossem cartazes para um produto - se o link está disponível para clique, o conteúdo que ele aponta também deve estar disponível para acesso. Um link quebrado é como se fosse um cartaz apontando para um produto que não está disponível na loja (algo frustrante para os visitantes da sua página, que são equivalentes os clientes da loja).</p>
+
+<h2>Como usar - exemplos com código</h2>
+<h3>Python</h3>
+<pre>
+  <code>
+    import requests
+
+response = requests.post(
+    'https://seo-spider.codedev-tech.com.br/link-checker/', # URL da API
+    headers={'Accept': 'application/json'}, # Cabeçalho
+    json={
+        'site': 'https://www.utorrent.com/' # site alvo
+    }
+)
+
+# Respostas (Link, Código HTTP retornado e Status da resposta)
+for item in response.json():
+    print(item)
+  </code>
+</pre>
