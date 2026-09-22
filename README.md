@@ -22,17 +22,8 @@
 <h2>Como usar - exemplos com código</h2>
 <h3>Python</h3>
 ```python
-import requests
+def saudacao(nome):
+    print(f"Olá, {nome}!")
 
-response = requests.post(
-        'https://seo-spider.codedev-tech.com.br/link-checker/', # URL da API
-  headers={'Accept': 'application/json'}, # Cabeçalho
-  json={
-      'site': 'https://www.utorrent.com/' # site alvo
-  }
-)
-
-''' Respostas (Link, Código HTTP retornado e Status da resposta) '''
-for item in response.json():
-  print(item)
+saudacao("Mundo")
 ```
