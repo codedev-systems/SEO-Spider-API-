@@ -21,8 +21,7 @@
 
 <h2>Como usar - exemplos com código</h2>
 <h3>Python</h3>
-<pre>
-  <code>
+```python
 import requests
 
 response = requests.post(
@@ -36,5 +35,4 @@ response = requests.post(
 ''' Respostas (Link, Código HTTP retornado e Status da resposta) '''
 for item in response.json():
   print(item)
-  </code>
-</pre>
+```
