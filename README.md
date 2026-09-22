@@ -37,6 +37,15 @@ Um link quebrado é como se fosse um cartaz apontando para um produto que não e
 ```python
 import requests
 
-response = requests.get("https://api.exemplo.com")
-print(response.json())
+response = requests.post(
+    'https://seo-spider.codedev-tech.com.br/link-checker/', # URL da API
+    headers={'Accept': 'application/json'}, # Cabeçalho
+    json={
+        'site': 'https://www.utorrent.com/' # site alvo
+    }
+)
+
+# Respostas (Link, Código HTTP retornado e Status da resposta)
+for item in response.json():
+    print(item)
 ```
