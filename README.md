@@ -49,3 +49,33 @@ response = requests.post(
 for item in response.json():
     print(item)
 ```
+
+### Node.js
+```javascript
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+async function getUrls(){
+    const response = await fetch(
+        'https://seo-spider.codedev-tech.com.br/link-checker/',
+        {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                site: 'https://www.utorrent.com/'
+            })
+        }
+    );
+
+    const data = await response.json();
+
+    // Respostas (Link, Código HTTP retornado e Status da resposta)
+    for (const item of data) {
+        console.log(item);
+    }
+}
+
+getUrls();
+```
