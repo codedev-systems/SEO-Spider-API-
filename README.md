@@ -156,3 +156,6 @@ public class Api{
     }
 }
 ```
+## Atenção!
+O 404 Spider respeita configurações de arquivos robots.txt e de metatags robots, rastreando e acessando apenas páginas permitidas pelo dono do site.
+
